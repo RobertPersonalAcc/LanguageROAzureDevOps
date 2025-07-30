@@ -1,0 +1,26 @@
+{
+    "manifestVersion": 1,
+    "id": "romanian-letters-extension",
+    "publisher": "robertpic",
+    "version": "1.0.0",
+    "name": "Romanian Letters Extension",
+    "description": "An open-source extension to insert Romanian letters using key combinations. Note: This project is open-source and support is not maintained.",
+    "public": true,
+    "categories": ["Azure Repos"],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "romanian-letters",
+            "type": "ms.vss-web.hub",
+            "targets": ["ms.vss-work-web.work-item-form"],
+            "properties": {
+                "name": "Romanian Letters",
+                "uri": "src/index.html"
+            }
+        }
+    ]
+}
